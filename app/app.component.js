@@ -10,9 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var datepicker_component_1 = require('./ng2-datepicker/datepicker.component');
+var moment = require("moment");
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.date = moment();
+        this.drawCalendar(this.date);
+    };
+    AppComponent.prototype.drawCalendar = function (date) {
+        date;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

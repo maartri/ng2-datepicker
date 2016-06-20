@@ -1,8 +1,28 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+
 
 @Component({
 	selector: 'datepicker',
-	template: `hello`,
+	template: `
+		<div class="dp-container">
+			<div class="dp-input">
+				<input type="text"
+					   readonly
+			    />
+			</div>
+			<div class="dp-calendar">
+
+			</div>
+		</div>
+	`,
 })
 
-export class DatePicker { }
+export class DatePicker implements OnInit { 
+	constructor(){
+
+	}
+	ngOnInit(){
+		moment;
+
+	}
+}

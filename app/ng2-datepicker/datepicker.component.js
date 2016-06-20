@@ -12,10 +12,13 @@ var core_1 = require("@angular/core");
 var DatePicker = (function () {
     function DatePicker() {
     }
+    DatePicker.prototype.ngOnInit = function () {
+        moment;
+    };
     DatePicker = __decorate([
         core_1.Component({
             selector: 'datepicker',
-            template: "hello",
+            template: "\n\t\t<div class=\"dp-container\">\n\t\t\t<div class=\"dp-input\">\n\t\t\t\t<input type=\"text\"\n\t\t\t\t\t   readonly\n\t\t\t    />\n\t\t\t</div>\n\t\t\t<div class=\"dp-calendar\">\n\n\t\t\t</div>\n\t\t</div>\n\t",
         }), 
         __metadata('design:paramtypes', [])
     ], DatePicker);
