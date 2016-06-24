@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var datepicker_component_1 = require('./ng2-datepicker/datepicker.component');
+var animate_1 = require('./animate/animate');
 var AppComponent = (function () {
     function AppComponent() {
         this.date = new Date();
@@ -17,8 +18,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>My First Angular 2 App</h1>\n  \t<div class=\"container-fluid\">\n  \t\t<datepicker [(ngModel)]=\"date\"></datepicker>\n  \t</div>\n  ",
-            directives: [datepicker_component_1.DatePicker]
+            template: "\n  \t<div class=\"container-fluid\">\n  \t\t <my-expando></my-expando>\n  \t</div>\n  ",
+            directives: [animate_1.MyExpandoCmp, datepicker_component_1.DatePicker]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

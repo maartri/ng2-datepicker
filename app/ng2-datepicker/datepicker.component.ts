@@ -49,6 +49,7 @@ interface Calendar{
 						<span *ngIf="day.day!=null">{{ day.day }}</span>
 						<span *ngIf="day.day==null"></span>
 					</div>
+					<div class="calendar-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
 				</div>
 			</div>
 		</div>
@@ -60,7 +61,13 @@ interface Calendar{
 		div.date-control i:first-child { left:5px; top:3px}
 		div.date-control i:last-child { right:5px; top:3px }
 		div.dp-container { width: 100%; position:relative; }
-
+		div.calendar-icon {
+		    margin-top: 1em;
+		    padding: 0.5em 0 0.5em 0;
+		    border-top: 1px solid black;
+		    border-bottom: 1px solid black;
+		    text-align: center;
+		}
 		div.dp-container div.dp-input input[type="text"] { width: 100%; }
 
 		div.dp-container div.dp-calendar { 

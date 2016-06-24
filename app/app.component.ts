@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { DatePicker }  from './ng2-datepicker/datepicker.component';
 
+import { MyExpandoCmp } from './animate/animate';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>My First Angular 2 App</h1>
+  template: `
   	<div class="container-fluid">
-  		<datepicker [(ngModel)]="date"></datepicker>
+  		 <my-expando></my-expando>
   	</div>
   `,
-  directives:[DatePicker]
+  directives:[MyExpandoCmp,DatePicker]
 })
 export class AppComponent {
 
